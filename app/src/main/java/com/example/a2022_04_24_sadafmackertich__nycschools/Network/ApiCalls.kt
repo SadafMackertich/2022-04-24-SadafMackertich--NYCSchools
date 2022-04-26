@@ -12,7 +12,7 @@ interface ApiCalls {
     fun getSchools(): Call<List<SchoolListDataObject>>
 
     @GET("f9bf-2cp4.json")
-    fun getSatScores(@Query("dbn", encoded = false) dbn:String): Call<SchoolSATDataObject>
+    fun getSatScores(@Query("dbn", encoded = false) dbn:String): Call<List<SchoolSATDataObject>>
 
     companion object {
 

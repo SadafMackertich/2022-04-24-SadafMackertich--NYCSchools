@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.a2022_04_24_sadafmackertich__nycschools.Network.ApiCalls
 import com.example.a2022_04_24_sadafmackertich__nycschools.Network.SchoolListDataObject
@@ -31,7 +32,8 @@ class SchoolListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-//        requireActivity().actionBar!!.title = "NYC Schools"
+        (requireActivity() as AppCompatActivity)
+            .supportActionBar!!.title = "NYC Schools"
 
         val apiInterface = ApiCalls.create().getSchools()
 

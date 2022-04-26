@@ -22,9 +22,4 @@
             android:name="dbn"
             app:argType="string" />
     </fragment>
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.a2022_04_24_sadafmackertich__nycschools.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
 </navigation>
